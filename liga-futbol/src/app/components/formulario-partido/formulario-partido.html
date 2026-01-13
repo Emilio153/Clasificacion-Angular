@@ -1,0 +1,22 @@
+<div class="form-container">
+  <h3>Jugar Partido</h3>
+  <form (ngSubmit)="registrar()">
+    <select [(ngModel)]="localId" name="local">
+        <option value="" disabled selected>Local</option>
+        <option *ngFor="let eq of listaEquipos" [value]="eq.id">{{ eq.nombre }}</option>
+    </select>
+    
+    <input type="number" [(ngModel)]="golesLocal" name="gl" min="0">
+    <span> - </span>
+    <input type="number" [(ngModel)]="golesVisitante" name="gv" min="0">
+
+    <select [(ngModel)]="visitanteId" name="visitante">
+        <option value="" disabled selected>Visitante</option>
+        <option *ngFor="let eq of listaEquipos" [value]="eq.id">{{ eq.nombre }}</option>
+    </select>
+
+    <button type="submit" [disabled]="!localId || !visitanteId">Actualizar</button>
+    <button type="submit" (click)="resetearLiga()">Reiniciar</button>
+  </form>
+  <p class="error" *ngIf="mensajeError">{{ mensajeError }}</p>
+</div>

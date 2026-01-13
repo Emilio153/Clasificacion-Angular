@@ -1,0 +1,9 @@
+<div class="main-container">
+  <h1 class="main-title">Clasificación - Liga de fútbol</h1>
+
+  <app-tabla-clasificacion #tabla></app-tabla-clasificacion>
+
+  <app-formulario-partido (partidoJugado)="tabla.actualizarTabla()"></app-formulario-partido>
+
+  <router-outlet></router-outlet>
+</div>
