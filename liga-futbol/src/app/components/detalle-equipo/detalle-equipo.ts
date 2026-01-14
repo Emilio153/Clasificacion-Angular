@@ -30,7 +30,7 @@ import { Location } from '@angular/common';
     }
   `,
   styles: [`
-    .ficha { background-color: #D6EAF8; padding: 20px; border: 1px solid #ccc; border-radius: 8px; max-width: 600px; margin: 20px auto; text-align: center; }
+    .ficha { background-color: #D6EAF8; padding: 20px; border: 1px solid #ccc; border-radius: 8px; max-width: 850px; margin: 20px auto; text-align: center; }
     .stats { display: flex; justify-content: space-around; margin: 20px 0; font-weight: bold; }
     ul { list-style-type: none; padding: 0; }
     li { background: #f9f9f9; margin: 5px; padding: 5px; }

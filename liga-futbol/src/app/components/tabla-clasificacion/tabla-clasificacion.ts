@@ -12,7 +12,7 @@ import os from '@angular/common/locales/os';
   template: `
     <h2>Clasificación de La Liga</h2>
     
-    <table border="1" style="width: 100%; border-collapse: collapse; background-color: #D6EAF8">
+    <table border="1" style="width: 100%; border-radius: 8px; border-collapse: collapse; background-color: #D6EAF8">
       <thead>
         <tr style="background-color: #333; color: white;">
           <th>Pos</th><th>Equipo</th><th>Pts</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th>GF</th><th>GC</th><th>DG</th>
@@ -20,8 +20,8 @@ import os from '@angular/common/locales/os';
       </thead>
       <tbody>
         @for (eq of equipos; track eq.id; let i = $index) {
-          <tr>
-            <td>{{ i + 1 }}</td>
+          <tr> 
+            <td style="padding-left: 15px;">{{ i + 1 }}</td>
             <td>
               <img [src]="eq.escudo" [alt]="eq.nombre" width="22" style="vertical-align: middle;">
               <a [routerLink]="['/equipo', eq.id]" style="margin-left: 8px; text-decoration: none; color: blue;"> 
