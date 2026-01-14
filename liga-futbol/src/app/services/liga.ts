@@ -182,7 +182,7 @@ export class LigaService {
     });
   }
 
-  // Útil para reiniciar si te equivocas probando
+  // Para reiniciar
   resetearLiga(): void {
     localStorage.removeItem(this.CLAVE_LOCAL_STORAGE);
     window.location.reload();

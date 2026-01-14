@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-// Importamos tus componentes. Fíjate que las rutas coinciden con tu estructura
 import { TablaClasificacionComponent } from './components/tabla-clasificacion/tabla-clasificacion';
 import { FormularioPartidoComponent } from './components/formulario-partido/formulario-partido';
 

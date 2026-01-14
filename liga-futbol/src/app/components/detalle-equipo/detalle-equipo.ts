@@ -7,8 +7,8 @@ import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-detalle-equipo',
-  standalone: true, // Esto indica que es moderno
-  imports: [CommonModule, RouterModule], // ¡Aquí importamos lo que usa el HTML!
+  standalone: true, 
+  imports: [CommonModule, RouterModule], 
   template: `
     @if (equipo) {
       <div class="ficha">
@@ -37,7 +37,7 @@ import { Location } from '@angular/common';
   `]
 })
 export class DetalleEquipoComponent implements OnInit {
-  equipo?: Equipo; // La interrogación indica que puede ser undefined al principio
+  equipo?: Equipo;
 
   constructor(
     private route: ActivatedRoute,
